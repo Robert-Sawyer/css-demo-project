@@ -1,0 +1,200 @@
+#lets-rock {
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+  url('freedom.jpg') center top 10%/cover no-repeat border-box, red;
+  padding: 20px;
+  width: 100vw;
+  height: 33vh;
+  margin-top: 43px;
+  /* background-image: linear-gradient(180deg, red 60%, rgba(0,0,0,0.3)); */
+  /* background-image: radial-gradient(ellipse farthest-side at 30% 50%, red, blue, green); */
+  position: relative;
+
+  @media (min-width: 40rem) {
+    background-position: center top 10%;
+    height: 40vh;
+  } 
+}
+
+#lets-rock h1 {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  font-size: 1.6rem;
+
+  @media (min-width: 40rem) {
+    font-size: 3rem;
+  }
+}
+
+.plans-title {
+  color: yellowgreen;
+  text-align: center;
+}
+
+.plan {
+  background-color: #d5ffdc;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.4rem 0;
+  width: 100%;
+
+  @media (min-width: 40rem) {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.4rem;
+    width: 30%;
+    min-width: 10rem;
+    max-width: 25rem;
+  }
+}
+
+.plan-highlighted {
+  background-color: #19b84c;
+  color: white;
+}
+
+.recommended {
+  background: white;
+  color: #19b84c;
+  padding: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.plan-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan-list li {
+  margin: 8px 0;
+}
+
+.plan-title {
+  color: #0e4f1f;
+}
+
+.plan-price {
+  color: #808080;
+}
+
+.plan-highlighted .plan-title {
+  color: white;
+}
+
+.plan-highlighted .plan-price {
+  color: #0e4f1f
+}
+
+@media (min-width: 40rem) {
+  .plans-container {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .plan-highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+#sec-three {
+  background-color: #ff1b68;
+  margin-top: 80px;
+  padding: 1rem;
+}
+
+#sec-three .sec-title {
+  color: white;
+  margin: 2rem;
+  text-align: center;
+}
+
+.reasons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.reasons-list li {
+  /* display: inline-block; */
+  width: 100%;
+  vertical-align: top;
+}
+
+.list-image {
+  background-color: #ffcede;
+  border: 2px solid #424242;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+.reasons-list li p {
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 40rem) {
+  .reasons-list li {
+    display: inline-block;
+    width: 30%;
+  }
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal-title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.modal-actions {
+  text-align: center;
+}
+
+.modal-action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal-action:hover,
+.modal-action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+
+.modal-action-negative {
+  background: red;
+  border-color: red;
+}
+
+.modal-action-negative:hover,
+.modal-action-negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}

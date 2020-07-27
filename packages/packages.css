@@ -1,0 +1,75 @@
+.background {
+    background: url("../images/plans-background.jpg") center/cover;
+    filter: grayscale(40%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+#main-plans {
+    left: 0;
+    margin-top: 1.9rem;
+    padding-top: 30px;
+}
+
+#main-plans section {
+    padding: 25px;
+    border: 2px solid black;
+    margin: 1rem 0;
+    width: 70%;
+    border-left: none;
+    position: relative;
+}
+
+#main-plans section a {
+    text-decoration: none;
+    color: black;
+}
+
+.badge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    background-color: #ff5454;
+    padding: 8px;
+    font-size: 12px;
+    color: white !important;
+}
+
+#main-plans section a:last-child {
+    color: white;
+}
+
+#main-plans section a h2 {
+    color: #979494;
+}
+
+#main-plans section a p {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+
+.clearbox {
+    clear: both;
+}
+
+.plus-plan {
+    background: darkkhaki;
+}
+
+.free-plan {
+    background-color: springgreen;
+    float: right;
+    text-align: right;
+    border-right: none !important;
+    border-left: 2px solid black !important; 
+}
+
+.premium-plan {
+    background-color: teal; 
+}
