@@ -22,8 +22,7 @@ body {
 .main-header {
     width: 100%;
     background-color: cadetblue;
-    padding: 10px;
-    padding-bottom: 0;
+    padding: 10px 10px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -57,21 +56,21 @@ body {
     margin: 0.6rem 0;
   }
   
-.logo {
+.main-header__brand {
     width: 2rem;
     display: inline-block;
     vertical-align: middle;
 }
 
-.logo img {
+.main-header__brand img {
     width: 100%;
 }
 
-.main-nav-item {
+.main-nav__item {
     display: none;
 }
 
-.main-nav-item a,
+.main-nav__item a,
 .mobile-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
@@ -79,13 +78,13 @@ body {
     padding: 3px 0;
 }
 
-.main-nav-item a:hover,
-.main-nav-item a:active {
+.main-nav__item a:hover,
+.main-nav__item a:active {
     color: white;
     border-bottom: 5px solid white;
 }
 
-.main-nav-start a,
+.main-nav__item--cta a,
 .mobile-nav__item--cta a {
     color: white;
     background: red;
@@ -93,8 +92,8 @@ body {
     border-radius: 8px;
 }
 
-.main-nav-start a:hover,
-.main-nav-start a:active,
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
     color: red;
@@ -107,7 +106,7 @@ body {
         padding-bottom: 10px;
     }
     
-    .logo {
+    .main-header__brand {
         width: 1.5rem;
     }
 
@@ -122,13 +121,13 @@ body {
         vertical-align: middle;
     }
 
-    .main-nav-list {
+    .main-nav__items {
         margin: 0;
         padding: 0;
         list-style: none;
     }
     
-    .main-nav-item {
+    .main-nav__item {
         display: inline-block;
         margin: 0 10px;
     }
